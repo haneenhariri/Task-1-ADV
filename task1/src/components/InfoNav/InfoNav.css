@@ -1,0 +1,64 @@
+.InfoNav
+{
+    padding: 10px 80px ;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-1 .info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-1 .info .info-link
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+.div-1 .info .info-icon
+{
+    width: 20px;
+    margin-right: 15px;
+}
+.div-1 .info .info-link:first-child{
+ border-right: 1px solid #eeeeee;
+ margin-right: 20px ;
+ padding-right: 20px;
+}
+.icons
+{
+    display: flex;
+    align-items: center;
+}
+.icons .social-icon
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons .social-icon img
+{
+    width: 14px;
+}
+@media (max-width:992px) and (min-width:300px)
+{
+    .InfoNav
+    {
+        display: none;
+    }
+}
