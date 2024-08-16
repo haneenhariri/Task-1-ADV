@@ -1,7 +1,7 @@
 .view
 {
     padding: 7% 12%;
-    background-image: url(./imag/ViewImg/bg.jpg);
+    background-image: url(/public/imag/ViewImg/bg.jpg);
     background-repeat: no-repeat;
     background-position: top;
     display: flex;

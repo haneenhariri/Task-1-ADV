@@ -8,6 +8,7 @@ import ServesList from './components/ServesList/ServesList';
 import Featured from './components/Featured/Featured';
 import Best from './components/Best/Best';
 import ViewSection from './components/ViewSection/ViewSection';
+import OrangCard from './components/OrangCard/OrangCard';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Hero/>
       <Featured/>
       <ViewSection/>
+      <OrangCard/>
     </>
   )
 }
