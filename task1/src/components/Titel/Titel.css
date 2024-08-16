@@ -1,6 +1,4 @@
-.left{
-    text-align: left;
-}
+
 .T-P
 {
     color: #f35525;
@@ -10,11 +8,23 @@
     font-weight: 800;
     height: max-content;
     margin-bottom: 20px;
+    width: max-content;
 }
 .T-H
 {
     font-size: 46px;
     font-weight: 800;    
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .T-P
+    {
+        font-size: 15px;
+    }
+    .T-H
+    {
+        font-size: 35px;
+    }
 }
 @media (max-width:576px) and (min-width:300px)
 {

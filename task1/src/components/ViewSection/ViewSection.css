@@ -1,0 +1,80 @@
+.view
+{
+    padding: 7% 12%;
+    background-image: url(./imag/ViewImg/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.v-title{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 5%;
+
+}
+.v-title h2{
+    color: white;
+}
+.video
+{
+    border-radius: 7px;
+    position: relative;
+    width: 100%;
+    height: max-content;
+}
+.video img{
+    width: 100%;
+    border-radius: 7px;
+}
+.video .play
+{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 50%;
+    color: white;
+    width: 85px;
+    height: 85px;
+    background-color: #f35525a4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .v-title{
+
+        margin-bottom: 20%; 
+    }
+    .video .play
+    {
+        top: 40%;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .v-title{
+        width: auto;
+        margin-bottom: 20%; 
+    }
+    .video .play
+    {
+        top: 30%;
+        left: 40%;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
