@@ -1,0 +1,29 @@
+.left{
+    text-align: left;
+}
+.T-P
+{
+    color: #f35525;
+    border-left: 3px solid #f35525;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 800;
+    height: max-content;
+    margin-bottom: 20px;
+}
+.T-H
+{
+    font-size: 46px;
+    font-weight: 800;    
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .T-P
+    {
+        font-size: 13px;
+    }
+    .T-H
+    {
+        font-size: 28px;
+    }
+}

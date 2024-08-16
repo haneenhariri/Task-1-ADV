@@ -1,0 +1,58 @@
+.ServList
+{
+    padding: 10px 20px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1)
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #eeee;
+}
+.row:last-child
+{
+    border-bottom: 0;
+
+}
+.p-serv
+{
+    font-size: 20px;
+    font-weight: 800;
+}
+.span-serv
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+.List-1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.List-2
+{
+    display: flex;
+    gap: 10px;
+}
+@media (max-width:576px) and (min-width:300px)
+{
+        .p-serv
+    {
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .span-serv
+    {
+        font-size: 12px;
+        font-weight: 300;
+        color: gray;
+    }
+}

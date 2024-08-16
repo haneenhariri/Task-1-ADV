@@ -1,0 +1,112 @@
+.feat
+{
+    padding: 12% ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feat-img
+{
+    position: relative;
+    width: 280px;
+    height: max-content;
+}
+.feat-img .F-img
+{
+    width: 100%;
+}
+.feat-span
+{
+    position: absolute;
+    bottom: -30px;
+    left: -40px;
+    width: 85px;
+    height: 85px;
+    background-color: #f35525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.feat-span img
+{
+    width: 45px;
+}
+.m-feat
+{
+    width: 450px;
+}
+.f-titel
+{
+    width: 350px;
+    margin-bottom: 40px;
+}
+@media (max-width:1200px) and (min-width:992px)
+{
+    .feat
+    {
+        gap: 50px;
+    }
+}
+@media (max-width:992px) and (min-width:768px)
+{
+    .feat
+    {
+
+        gap: 50px;
+    }
+    .m-feat
+    {
+        width: 380px;
+    }
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .feat
+    {
+
+        gap: 50px;
+    }
+    .m-feat
+    {
+        width: 380px;
+    }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .feat
+    {
+        justify-content: center;
+        gap: 50px;
+    }
+    .feat-img 
+    {
+        width: 240px;
+    }
+    .m-feat
+    {
+        width: 235px;
+    }
+    .feat-span {
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        width: 55px;
+        height: 55px;
+        background-color: #f35525;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .feat-span img
+    {
+        width: 30px;
+    }
+        .f-titel
+    {
+        width: 200px;
+        margin-bottom: 40px;
+    }
+}

@@ -8,7 +8,7 @@ export default function SideBar({ isOpen, toggleSidebar }) {
         <div>
         <div className="nav-head head-side">
             <h3>VILLA</h3>
-            <a href=""  onClick={(e) => { e.preventDefault(); toggleSidebar(); }}><img className="close" src="/public/imag/NavIcon/xmark-solid.svg" alt="" /></a>
+            <a href=""  onClick={(e) => { e.preventDefault(); toggleSidebar(); }}><img className="close" src="./imag/NavIcon/xmark-solid.svg" alt="close" /></a>
         </div>
          <ul className=' ul-side'>
             {navData.map(index =>
