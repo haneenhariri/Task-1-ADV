@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url(public/imag/ViewImg/contact-bg.jpg);
+    background: url(/public/imag/ViewImg/contact-bg.jpg);
     background-repeat: no-repeat;
 }
 .contact .contact-title
