@@ -29,22 +29,32 @@
     font-weight: 800;
     width: 320px;
 }
-
+@media(max-width:768px) and (min-width:567px)
+{
+    .hero-h1
+    {
+        font-size: 45px;
+        font-weight: 800;
+        width: 250px;
+    }
+    .hero-p
+    {
+        padding: 10px  ;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
 @media (max-width:567px) and (min-width:300px)
 {
     .hero-h1
     {
-        color: white;
-        font-size: 33px;
-        font-weight: 700;
+        font-size: 35px;
+        font-weight: 800;
         width: 200px;
     }
     .hero-p
     {
-        background-color: white;
         padding: 10px  ;
-        width: max-content;
-        margin-bottom: 20px;
         font-size: 14px;
         font-weight: 600;
     }

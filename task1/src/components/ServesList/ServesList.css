@@ -10,9 +10,11 @@
 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
     padding: 25px 0;
     border-bottom: 1px solid #eeee;
+    width: 100%;
+    gap: 30px;
 }
 .row:last-child
 {
@@ -26,7 +28,7 @@
 }
 .span-serv
 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     color: gray;
 }
@@ -35,24 +37,22 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    width: 50%;
 
 }
 .List-2
 {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
+    width: 100%;
 }
 @media (max-width:576px) and (min-width:300px)
 {
-        .p-serv
+    .ServList
     {
-        font-size: 15px;
-        font-weight: 800;
+        width: 300px;
     }
-    .span-serv
-    {
-        font-size: 12px;
-        font-weight: 300;
-        color: gray;
-    }
+
+
 }

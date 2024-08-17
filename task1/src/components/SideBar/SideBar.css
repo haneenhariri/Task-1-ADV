@@ -47,7 +47,9 @@
     padding: 0 30px;
     margin-bottom: 20px;
   }
-  
+  .info-side .info-link{
+    color: black !important;
+  }
   .head-side {
     display: flex;
     align-items: center;
@@ -60,9 +62,16 @@
   .nav-head .close {
     width: 15px;
   }
-  
+
   .side-icons
   {
     padding: 0 25px;
     margin-bottom: 20px;
   }
+@media (max-width:1200px) and (min-width:992px)
+{
+    .sidebar
+    {
+      display: none;
+    }
+}

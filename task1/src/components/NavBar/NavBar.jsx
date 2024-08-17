@@ -1,8 +1,32 @@
 import './NavBar.css'
 import { navData } from '../../data/nav'
 import ScheduleBtn from '../ScheduleBtn/ScheduleBtn'
+import { useEffect, useState } from 'react';
 
-export default function NavBar({ toggleSidebar }) {
+export default function NavBar({toggleSidebar}) {
+  /* hocks for active section color */
+  const [activeSection, setActiveSection] = useState('');
+  useEffect(() => {
+    const handleScroll = () => {
+      navData.forEach((index) => {
+        const section = document.querySelector(index.link);
+        if (section) {
+          const offset = section.offsetTop - 100;
+          const height = section.offsetHeight;
+          const scrollPosition = window.scrollY;
+
+          if (scrollPosition >= offset && scrollPosition < offset + height) {
+            setActiveSection(index.link);
+          }
+        }
+      });
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  /* nav bar */
   return (
     <nav className='navbar'>
          <div className='nav-head'>
@@ -13,7 +37,7 @@ export default function NavBar({ toggleSidebar }) {
                 {
                     return(
                         <li className='nav-li' key={index.id}>
-                            <a className='nav-link' href={index.link}>{index.title}</a>
+                            <a className={`nav-link ${activeSection === index.link ? 'active' : ''}`} href={index.link}>{index.title}</a>
                         </li>
                     )
                 }
@@ -25,7 +49,9 @@ export default function NavBar({ toggleSidebar }) {
                 <span></span>
               </a>
             </li>
-            <ScheduleBtn/>
+            <div className='schedule-nav'>
+            <ScheduleBtn />
+            </div>
          </ul>
 
     </nav>

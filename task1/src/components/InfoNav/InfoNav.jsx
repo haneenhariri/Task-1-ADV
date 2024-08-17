@@ -1,9 +1,12 @@
 import './InfoNav.css'
+/* data file  */
 import { infoData } from '../../data/info'
 import { infoIcon } from '../../data/info'
+
 export default function InfoNav() {
   return (
     <section className='InfoNav'>
+        {/* map and email div  */}
         <div className='div-1'>
             <div className='info'>
                 {infoData.map(i=>{
@@ -16,12 +19,12 @@ export default function InfoNav() {
                 })}
             </div>
         </div>
+        {/* social icon div  */}
         <div className='icons'>
-
                 {infoIcon.map(j=>
                     {
                         return(
-                            <div className='social-icon'  key={j.id}>
+                            <div className='social-icon' key={j.id}>
                                 <a href={j.href} className='link'>
                                     <img src={j.icon} alt={j.socIcon} />
                                 </a>

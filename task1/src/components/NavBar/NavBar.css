@@ -5,6 +5,11 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    position:sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 .navbar .ul-nav
 {
@@ -22,6 +27,10 @@
     text-decoration: none;
     color: black;
     font-size: 17px;
+}
+.nav-link.active
+{
+    color: #f35525;
 }
 .navbar .ul-nav .nav-li .nav-link:hover
 {
@@ -72,6 +81,10 @@
         display: block;
     }
     .nav-li
+    {
+        display: none;
+    }
+    .schedule-nav
     {
         display: none;
     }

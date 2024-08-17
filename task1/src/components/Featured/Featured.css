@@ -1,6 +1,6 @@
 .feat
 {
-    padding: 12% ;
+    padding: 10% ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -11,6 +11,7 @@
     position: relative;
     width: 280px;
     height: max-content;
+    margin-bottom: 20px;
 }
 .feat-img .F-img
 {
@@ -42,20 +43,9 @@
     width: 350px;
     margin-bottom: 40px;
 }
-@media (max-width:1200px) and (min-width:992px)
-{
-    .feat
-    {
-        gap: 50px;
-    }
-}
+
 @media (max-width:992px) and (min-width:768px)
 {
-    .feat
-    {
-
-        gap: 50px;
-    }
     .m-feat
     {
         width: 380px;
@@ -70,7 +60,11 @@
     }
     .m-feat
     {
-        width: 380px;
+        width: 90%;
+    }
+    .feat-img
+    {
+        width: 70%;
     }
 }
 @media (max-width:576px) and (min-width:300px)
@@ -82,23 +76,18 @@
     }
     .feat-img 
     {
-        width: 240px;
+        width: 100%;
     }
     .m-feat
     {
-        width: 235px;
+        width: 100%;
     }
     .feat-span {
-        position: absolute;
         bottom: -10px;
         left: -10px;
-        width: 55px;
-        height: 55px;
-        background-color: #f35525;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+
     }
     .feat-span img
     {
@@ -109,4 +98,5 @@
         width: 200px;
         margin-bottom: 40px;
     }
+    
 }

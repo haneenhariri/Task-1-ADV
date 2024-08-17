@@ -34,10 +34,4 @@
 {
     margin-left: 15px;
 }
-@media (max-width:992px) and (min-width:300px)
-{
-    .button
-    {
-        display: none;
-    }
-}
+

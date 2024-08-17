@@ -42,8 +42,9 @@
 {
     display: flex;
     position: absolute;
-    bottom: -4px;
-    left: 7rem;
+    z-index: 1;
+    bottom: 7px;
+    left: 50%;
 }
 
 .indicator
