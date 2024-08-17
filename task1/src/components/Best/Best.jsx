@@ -2,13 +2,16 @@ import './Best.css'
 import ServesList from '../ServesList/ServesList'
 import Titel from '../Titel/Titel'
 import ScheduleBtn from '../ScheduleBtn/ScheduleBtn'
+import FiltrBtn from '../FiltrBtn/FiltrBtn'
 
 export default function Best() {
   return (
     <section className='best'>
-      <div className='best-head'>
-        <div className='best-title'>
-            <Titel p={'BEST DEAL'} h2={'Find Your Best Deal Right Now!'}/>
+        <div className='best-head'>
+          <div className='best-title'>
+              <Titel p={'BEST DEAL'} h2={'Find Your Best Deal Right Now!'}/>
+          </div>
+          <FiltrBtn/>
         </div>
         <div className='best-content'>
           <ServesList page={false}/>
@@ -24,7 +27,6 @@ export default function Best() {
         <div className='btn-left'>
           <ScheduleBtn/>
         </div>
-      </div>
 
     </section>
   )

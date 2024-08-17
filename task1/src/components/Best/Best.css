@@ -4,6 +4,13 @@
     background-color: #fafafa;
 
 }
+.best-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-wrap: wrap;
+}
 .best-title
 {
     width: 400px;
