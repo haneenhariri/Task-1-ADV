@@ -1,0 +1,31 @@
+.filterCard
+{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.num
+{
+    display: flex;
+}
+.num span
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num span:nth-child(2)
+{
+    background-color: #f35525;
+}

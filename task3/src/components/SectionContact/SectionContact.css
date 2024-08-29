@@ -1,0 +1,43 @@
+.sectionContact
+{
+    padding: 10%;
+}
+.divContant-1
+{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+}
+.divContant-1 .contact-title
+{
+    width: 300px;
+}
+.divTitelCon
+{
+    width: 60%;
+}
+.contact-p-section
+{
+    margin: 30px 0;
+    line-height: 25px;
+    width: 85%;
+}
+.conCardInfo
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width:992px) and (min-width:300px)
+{
+    .divTitelCon
+    {
+        width: 300px;
+    }
+    .divContant-1 .contact-title
+    {
+        width: auto;
+    }
+}

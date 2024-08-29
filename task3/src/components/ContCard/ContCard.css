@@ -1,0 +1,37 @@
+.cont-card
+{
+    width: 300px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+.cont-card-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+.link-cont
+{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.cont-card-text span
+{
+    color: gray;
+}
+
+@media (max-width:992px) and (min-width:300px)
+{
+    .cont-card
+    {
+        width: 100%;
+    }
+}

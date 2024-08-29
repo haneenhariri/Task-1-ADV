@@ -1,0 +1,53 @@
+.black-hero
+{
+    padding: 12%;
+    background: url(/public/imag/HeroImg/page-heading-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.black-hero .p-black
+{
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: max-content;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.black-hero .black-h{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+@media (max-width:768px) and (min-width:576px)
+{
+    .black-hero .p-black
+    {
+        font-size: 15px;
+    }
+    .black-hero .black-h
+    {
+        font-size: 35px;
+    }
+}
+@media (max-width:576px) and (min-width:300px)
+{
+    .black-hero .p-black
+    {
+        font-size: 13px;
+        padding: 5px;
+    }
+    .black-hero .black-h
+    {
+        font-size: 28px;
+    }
+}
